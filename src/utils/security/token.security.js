@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { findById, findOne } from "../../DB/db.service.js";
+import { create, findById, findOne } from "../../DB/db.service.js";
 import UserModels, { roleEnum } from "../../DB/models/User.model.js";
 import { nanoid } from "nanoid";
 import TokenModels from "../../DB/models/Token.model.js";
