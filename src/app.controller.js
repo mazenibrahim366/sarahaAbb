@@ -1,7 +1,10 @@
 import * as dotenv from"dotenv"
 import path from "node:path"
-dotenv.config({path:path.join("./src/config/.env.dev")})
-//  dotenv.config({})
+// dotenv.config({path:path.join("./src/config/.env.dev")})
+const envPath = path.join(process.cwd(), "src", "config", ".env.dev");
+
+dotenv.config({ path: envPath });
+ 
 import express from'express'
 import userController from "./modules/users/user.controller.js"  
 import authController from "./modules/auth/auth.controller.js"         
