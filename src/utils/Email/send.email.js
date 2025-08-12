@@ -27,7 +27,8 @@ await transporter.sendMail(mailOptions)
 
     
   } catch (error) {
-  return next(new Error(`Error while sending email: ${error.message}`, { cause: 500 }))
+  return 
+  // next(new Error(`Error while sending email: ${error.message}`, { cause: 500 }))
   }
 
 }
