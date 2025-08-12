@@ -31,7 +31,7 @@ const limiter = rateLimit({
 
 app.use(limiter)
     // ====== cors
-    var whitelist = process.env.ORIGINS.split(",") || []
+    // var whitelist = process.env.ORIGINS.split(",") || []
     // var corsOptions = {
     //   origin: function (origin, callback) {
     //     if (whitelist.indexOf(origin) !== -1) {
